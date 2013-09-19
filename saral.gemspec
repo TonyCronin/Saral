@@ -6,11 +6,11 @@ require 'saral/version'
 Gem::Specification.new do |spec|
   spec.name          = "saral"
   spec.version       = Saral::VERSION
-  spec.authors       = ["Tony Cronin"]
-  spec.email         = ["info@cronin.co"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["SatishTalim"]
+  spec.email         = ["satish@rubylearning.org"]
+  spec.description   = %q{A Rack-based Web Framework built by RubyLearning.}
+  spec.summary       = %q{A Rack-based Web Framework}
+  spec.homepage      = "http://rubylearning.org/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_runtime_dependency "rack"
+  spec.add_runtime_dependency "erubis"
 end
